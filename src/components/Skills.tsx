@@ -28,11 +28,8 @@ const skillCategories: SkillCategory[] = [
       { name: "Node.js", color: "#339933" },
       { name: "Express.js", color: "#000000" },
       { name: "MongoDB", color: "#47A248" },
-<<<<<<< HEAD
-      { name: "JavaScript", color: "#F7DF1E" },
-      { name: "TypeScript", color: "#3178C6" },
-=======
->>>>>>> 7b653036cfdb79d329f64aa9deb0a98f966331cf
+
+
       { name: "PostgreSQL", color: "#336791" },
       { name: "Prisma ORM", color: "#2D3748" },
       { name: "Firebase", color: "#FFCA28" },

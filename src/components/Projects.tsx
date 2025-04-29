@@ -19,7 +19,11 @@ const projectsData: ProjectProps[] = [
     description: "A real-time chat application supporting users with WebSocket. Features modern UI and real-time message sending.",
     techStack: ["React", "Node.js", "Express.js", "WebSocket", "MongoDB", "JWT", "Tailwind CSS"],
     liveLink: "#",
+<<<<<<< HEAD
     githubLink: "https://github.com/saksham-2/blood-donation.git",
+=======
+    githubLink: "#",
+>>>>>>> 7b653036cfdb79d329f64aa9deb0a98f966331cf
     features: [
       "Simple login and chatting system",
       "Real-time message sending",
@@ -32,7 +36,11 @@ const projectsData: ProjectProps[] = [
     description: "A comprehensive task management application with authentication, task management, and notification features.",
     techStack: ["React", "Vite", "Node.js", "Express.js", "MongoDB", "Firebase", "Tailwind CSS"],
     liveLink: "#",
+<<<<<<< HEAD
     githubLink: "https://github.com/saksham-2/web-taskmanager.git",
+=======
+    githubLink: "#",
+>>>>>>> 7b653036cfdb79d329f64aa9deb0a98f966331cf
     features: [
       "Login/signup authentication",
       "Add, edit, delete todos",
@@ -46,7 +54,11 @@ const projectsData: ProjectProps[] = [
     description: "A full-stack quiz platform allowing users to create, take, and share quizzes with an intuitive interface.",
     techStack: ["React", "Vite", "Node.js", "Express.js", "MongoDB", "JWT", "Redux Toolkit", "Tailwind CSS"],
     liveLink: "#",
+<<<<<<< HEAD
     githubLink: "https://github.com/saksham-2/Quiz-App.git",
+=======
+    githubLink: "#",
+>>>>>>> 7b653036cfdb79d329f64aa9deb0a98f966331cf
     features: [
       "Authentication flow",
       "Create quizzes with questions",
@@ -60,7 +72,11 @@ const projectsData: ProjectProps[] = [
     description: "A comprehensive blood donation management application with donor search capabilities and user profiles.",
     techStack: ["React", "TypeScript", "Recoil", "Node.js", "Express.js", "PostgreSQL", "Prisma ORM", "Tailwind CSS"],
     liveLink: "#",
+<<<<<<< HEAD
     githubLink: "https://github.com/saksham-2/blood-donation.git",
+=======
+    githubLink: "#",
+>>>>>>> 7b653036cfdb79d329f64aa9deb0a98f966331cf
     features: [
       "User registration/login",
       "Search donors by blood group",

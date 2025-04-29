@@ -59,17 +59,24 @@ const About = () => {
               Hi, I'm Saksham Tomar
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              I'm a passionate full-stack developer who loves solving real-world problems through beautiful and efficient web applications. 
-              I specialize in the MERN stack and modern frontend/backend technologies, with a keen interest in delivering smooth and secure user experiences.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Currently pursuing my B.Tech in Computer Science & Engineering at Medi-Caps University, Indore, I'm constantly expanding my skills through 
-              coursework in Data Structures & Algorithms, Operating Systems, Computer Networks, Software Engineering, and DBMS.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              My strengths include full-stack web development using the MERN stack and PostgreSQL setups, type-safe development with TypeScript, 
-              state management with Recoil and Redux Toolkit, designing responsive and user-friendly interfaces, and implementing secure authentication flows.
-            </p>
+  I'm a passionate full-stack developer who enjoys turning real-world problems into elegant, high-performing web applications. 
+  I specialize in the MERN stack and modern web technologies, with a strong focus on building smooth, secure, and scalable user experiences.
+</p>
+
+<p className="text-gray-600 dark:text-gray-300 mb-4">
+  Currently pursuing my B.Tech in Computer Science & Engineering at Medi-Caps University, Indore, I'm actively enhancing my technical foundation through 
+  coursework in Data Structures & Algorithms, Operating Systems, Computer Networks, Software Engineering, and DBMS.
+</p>
+
+<p className="text-gray-600 dark:text-gray-300 mb-4">
+  My core strengths include full-stack development using the MERN stack and PostgreSQL, type-safe coding with TypeScript, efficient state management using Recoil and Redux Toolkit, 
+  and crafting responsive, intuitive UIs with modern frontend tools.
+</p>
+
+<p className="text-gray-600 dark:text-gray-300 mb-6">
+  I'm also expanding my expertise in cutting-edge technologies including Next.js for server-side rendering, cloud computing platforms like AWS and Firebase, 
+  and DevOps practices such as CI/CD pipelines and containerization. I'm continuously evolving as a developer and staying up-to-date with the latest trends in web development.
+</p>
 
             <div className="flex flex-wrap gap-4">
               <motion.a

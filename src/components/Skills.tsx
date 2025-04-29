@@ -15,11 +15,11 @@ const skillCategories: SkillCategory[] = [
     name: "Frontend",
     skills: [
       { name: "React.js", color: "#61DAFB" },
+      { name: "JavaScript", color: "#F7DF1E" },
       { name: "TypeScript", color: "#3178C6" },
       { name: "Tailwind CSS", color: "#06B6D4" },
       { name: "Recoil", color: "#3578E5" },
       { name: "Framer Motion", color: "#FF4395" },
-      { name: "Vite", color: "#BD34FE" },
     ],
   },
   {

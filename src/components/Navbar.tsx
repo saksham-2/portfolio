@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -9,11 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,6 +21,12 @@ const Navbar = () => {
     { name: "Skills", href: "#skills" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
+    {
+      name: "Resume",
+      href: "/resume.pdf",
+      external: true,
+      download: false, // Set to true if you want to force download
+    },
   ];
 
   return (
@@ -43,7 +44,10 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <a href="#home" className="text-2xl font-bold text-portfolio-primary">
+            <a
+              href="#home"
+              className="text-2xl font-bold text-portfolio-primary"
+            >
               Saksham<span className="text-portfolio-secondary">.dev</span>
             </a>
           </motion.div>
@@ -55,15 +59,28 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="hidden md:flex space-x-8"
           >
-            {navLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="relative font-medium text-gray-800 dark:text-gray-200 hover:text-portfolio-primary transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-portfolio-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link, index) =>
+              link.external ? (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download={link.download}
+                  className="relative font-medium text-gray-800 dark:text-gray-200 hover:text-portfolio-primary transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-portfolio-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="relative font-medium text-gray-800 dark:text-gray-200 hover:text-portfolio-primary transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-portfolio-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                >
+                  {link.name}
+                </a>
+              )
+            )}
           </motion.div>
 
           {/* Mobile Navigation Toggle */}
@@ -93,6 +110,9 @@ const Navbar = () => {
                 <motion.a
                   key={index}
                   href={link.href}
+                  target={link.external ? "_blank" : "_self"}
+                  rel={link.external ? "noopener noreferrer" : ""}
+                  download={link.download}
                   className="py-2 font-medium text-gray-800 dark:text-gray-200 hover:text-portfolio-primary transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                   initial={{ opacity: 0, y: -5 }}

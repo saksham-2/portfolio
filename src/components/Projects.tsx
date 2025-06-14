@@ -18,7 +18,7 @@ const projectsData: ProjectProps[] = [
     description: "A real-time chat application supporting users with WebSocket. Features modern UI and real-time message sending.",
     techStack: ["React", "Node.js", "Express.js", "WebSocket", "MongoDB", "JWT", "Tailwind CSS"],
     liveLink: "#",
-    githubLink: "https://github.com/saksham-2/blood-donation.git",
+    githubLink: "https://github.com/saksham-2/chatapp.git",
     features: [
       "Simple login and chatting system",
       "Real-time message sending",
